@@ -1,0 +1,41 @@
+<!--
+  Generated template for the NewPizzaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="dark">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Ajouter une nouvelle pizza</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <form (ngSubmit)="newPizza(pizza)">
+    <div>
+      Nom :
+      <ion-input [(ngModel)]="pizza.name" name="name" type="text"></ion-input>
+    </div>
+    <div>
+      Description:
+      <ion-textarea [(ngModel)]="pizza.desc" name="desc"></ion-textarea>
+    </div>
+    <div>
+      Prix :
+      <ion-input [(ngModel)]="pizza.price" name="price" type="number"></ion-input>
+    </div>
+    <button ion-button primary type="button" name="btnPhoto" (click)=takePhoto()>
+        Ajouter une image
+      <ion-icon name="camera">
+      </ion-icon>
+    </button>
+    <img src="{{picture}}">
+    <button ion-button full type="submit" color="secondary">Ajouter</button>
+  </form>
+</ion-content>

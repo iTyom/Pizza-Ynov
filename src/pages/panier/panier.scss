@@ -1,4 +1,4 @@
-page-home {
+page-panier {
 
 }
 
@@ -22,64 +22,37 @@ page-home {
 
 #containerImgPizza {
   background-image: url(../../assets/imgs/nappe.jpg);
-  width: 30%;
+  width: 100px;
   height: 70px;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
-  display: inline-block;
 }
 
 #imgPizza {
   max-height: 70px;
-  width: 100%;
+  width: 100px;
   display: inline-block;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
 }
 
-#divInfo {
-  display: inline;
+#namePizzaPanier {
   position: absolute;
-}
-
-#divInfo #pName {
-  display: inline;
   font-size: 20px;
-  margin-left: 30px;
-  color: white;
-
+  color: black;
+  width: 100%;
+  margin-top: -60px;
+  margin-left: 120px;
 }
 
-#containerPIngredient {
-  width: 80%;
-  text-align: justify;
-  word-break: keep-all;
-  display: inline-block;
-}
 
-#divInfo #pIngredient {
-  display: inline;
-  font-size: 15px;
-  margin-left: 5px;
-  word-break:keep-all;
-  text-align: justify;
-}
-
-#divPrice {
-  display:inline-block;
+#divPricePanier {
   position: absolute;
-  right: 20px;
   font-size: 22px;
 }
-
-#ionCard {
-  display: flex;
-  justify-content: center;
-  margin-top: 5px;
-  margin-left: 20px;
-}
-
-#ionCard span {
-  margin-left: 10px;
-  float: right;
+#btn {
+  position: absolute;
+  width: 50px;
+  margin-left: 150px;
+  margin-bottom: 30px;
 }

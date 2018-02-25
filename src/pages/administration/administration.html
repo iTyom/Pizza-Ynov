@@ -1,17 +1,24 @@
+<!--
+  Generated template for the AdministrationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
 <ion-header>
+
   <ion-navbar color="dark">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title>Administration</ion-title>
   </ion-navbar>
+
 </ion-header>
 
-<ion-content>
 
-  <img src="../../assets/imgs/header.jpg" />
+<ion-content>
   <div id="background">
-    <div id="containerPizza" (click)="showPizza(pizza)" *ngFor="let pizza of pizzas">
+    <div id="containerPizza" *ngFor="let pizza of allPizza">
       <div id="containerImgPizza">
         <img id="imgPizza" src="{{pizza.picture}}"/>
       </div>
@@ -21,14 +28,14 @@
         </p>
         <br />
         <div id="containerPIngredient">
-          <p id="pIngredient">
-            {{pizza.ingredients}}
-          </p>
+
         </div>
 
       </div>
       <div id="divPrice">
-        {{pizza.price}}€
+        <button ion-button color="danger" block type="button" name="button" (click)=removePizza(pizza)>
+          <ion-icon name="trash"></ion-icon>
+        </button>
       </div>
     </div>
   </div>

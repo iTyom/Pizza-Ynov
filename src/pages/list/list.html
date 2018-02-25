@@ -8,16 +8,14 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-start></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-end>
-        {{item.note}}
-      </div>
-    </button>
-  </ion-list>
-  <div *ngIf="selectedItem" padding>
-    You navigated here from <b>{{selectedItem.title}}</b>
-  </div>
+  <p>
+    Bonjour, voici mon rendu de l'application Pizza.<br />
+    Veuillez m'excuser pour les erreurs au lancement de l'application,<br />
+    je n'ai pas su les résoudre mais elles n'ont pas l'air d'être blocantes.<br />
+    Sur la home : liste des pizza avec possibilité de cliqué dessus pour voir le détail
+    et mettre dans le panier.<br />
+    Sur l'administration : liste des pizza avec possibilité de les supprimer.<br />
+    Sur le panier : liste des pizzas ajoutés aux panier avec possibilité de les supprimer.
+    Sur le +Pizza : possibilité d'ajouté des pizzas.<br />
+  </p>
 </ion-content>

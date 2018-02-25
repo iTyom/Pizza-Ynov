@@ -1,0 +1,40 @@
+<!--
+  Generated template for the PanierPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="dark">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Panier</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <h1 class="title">Mon panier</h1>
+    <ion-content>
+        <div id="background">
+          <div id="containerPizza" *ngFor="let pizza of panier">
+            <div id="containerImgPizza">
+              <img id="imgPizza" src="{{pizza.picture}}"/>
+            </div>
+            <div id="namePizzaPanier">
+                {{pizza.name}}
+              <div id="divPricePanier">
+                  {{pizza.price}}€
+              </div>
+                <button ion-button color="danger" block type="button" name="button" id="btn" (click)=removePizzaPanier(pizza)>
+                  <ion-icon name="trash"></ion-icon>
+                </button>
+            </div>
+
+          </div>
+        </div>
+
+    </ion-content>
+</ion-content>
