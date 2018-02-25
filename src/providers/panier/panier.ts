@@ -1,6 +1,5 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Storage } from '@ionic/storage';
 
 import { Pizza } from '../../modeles/pizza';
 
@@ -16,7 +15,7 @@ import 'rxjs/add/operator/map';
 export class PanierProvider {
   panier: Pizza[];
 
-  constructor(public http: HttpClient, private storage: Storage) {
+  constructor(public http: HttpClient) {
     this.panier = [];
   }
 

@@ -53,10 +53,6 @@ private readonly url = 'http://kim.jcatania.io:3000/pizza';
 
 
   add(pizza: Pizza){
-    let headers = {
-        'Content-Type': 'application/json'
-    };
-
     return new Promise(resolve => {
       this.http.post(this.url, pizza).subscribe(data => {
         resolve(this.data);

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
-import { Storage } from '@ionic/storage';
 import { ToastController } from 'ionic-angular';
 
 
@@ -26,7 +25,7 @@ export class PizzaPage {
 
   pizza: Pizza;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,  public toast: ToastController, public viewCtrl: ViewController, private storage: Storage, public panierProvider: PanierProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,  public toast: ToastController, public viewCtrl: ViewController, public panierProvider: PanierProvider) {
     this.pizza = this.navParams.get('data');
   }
 
