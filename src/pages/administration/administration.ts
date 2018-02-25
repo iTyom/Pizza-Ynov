@@ -22,7 +22,7 @@ import { PizzaProvider } from '../../providers/pizza/pizza';
 })
 export class AdministrationPage {
 
-  allPizza: Pizza;
+  allPizza: Pizza[];
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private pizzaProvider: PizzaProvider, public toastCtrl: ToastController) {
   }

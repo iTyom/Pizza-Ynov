@@ -41,7 +41,7 @@ private readonly url = 'http://kim.jcatania.io:3000/pizza';
   }
 
 
-  delete(id: string){
+  delete(id: number){
     return new Promise(resolve => {
       this.http.delete(this.url + "/" + id).subscribe(data => {
         this.data = Array.of(data);

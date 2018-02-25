@@ -29,8 +29,8 @@ export class PanierPage {
     this.panier = this.panierProvider.getPanier();
   }
 
-  removePizzaPanier(pizza: Pizza) {
-      this.panier.splice(pizza);
+  removePizzaPanier(i, pizza) {
+      this.panier.splice(i, 1);
   }
 
 }

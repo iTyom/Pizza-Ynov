@@ -32,7 +32,7 @@ export class NewPizzaPage {
   pizza: Pizza;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private camera: Camera, public PizzaProvider: PizzaProvider, public toastCtrl: ToastController) {
-    this.pizza = {picture: ""};
+    this.pizza = {id: 0, name: "", desc: "", picture: "", price: 0, ingredient_ids: []};
     this.picture = "data:image/jpeg;base64,";
   }
 
